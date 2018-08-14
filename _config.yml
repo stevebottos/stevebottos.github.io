@@ -9,6 +9,7 @@ url:              http://stevebottos.github.io
 baseurl:          /stevebottos.github.io/
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 author:
   name:           Steve Bottos
