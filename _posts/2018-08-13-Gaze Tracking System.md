@@ -7,7 +7,5 @@ title: Gaze Tracking System
 
 > **Key Concepts**: Machine Learning, Python (Numpy, Pomegranate), Bayesian Statistics, Hidden Markov Models
 
----
-
 
 
