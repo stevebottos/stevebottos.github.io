@@ -5,7 +5,7 @@ title: Projects
 
 ---
 ## Hidden Markov Model Tutorial
-<a href = "https://github.com/stevebottos/stevebottos.github.io/blob/master/_downloads/HMM_Tutorial.pdf" target = "_blank"> Test</a>
+<a href = "https://stevebottos.github.io/_downloads/HMM_Tutorial.pdf" target = "_blank"> Test</a>
 
 ---
 ## C++ Tutorials
