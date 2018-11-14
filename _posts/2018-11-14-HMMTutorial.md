@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C++ Tutorials
+title: Hidden Markov Model Tutorial
 ---
 
 ## Hidden Markov Model Tutorial
