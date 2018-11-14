@@ -6,7 +6,7 @@ title: Projects
 ---
 ## Hidden Markov Model Tutorial
 Hidden Markov Models are powerful tools, commonly used in a wide range of applications from stock price
-prediction, gene decoding, and speech recognition.<a href = "https://github.com/stevebottos/stevebottos.github.io/blob/master/_downloads/HMM_Tutorial.pdf" target = "_blank"> This is a tutorial</a> on Hidden Markov Models that I thought I would make publicly available for download since I believe it captures the intuition quite well. 
+prediction, to gene decoding, to speech recognition.<a href = "https://github.com/stevebottos/stevebottos.github.io/blob/master/_downloads/HMM_Tutorial.pdf" target = "_blank"> This is a tutorial</a> on Hidden Markov Models that I thought I would make publicly available for download since I believe it captures the intuition quite well. 
 
 ---
 ## C++ Tutorials
