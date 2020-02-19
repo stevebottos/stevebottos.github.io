@@ -4,6 +4,7 @@ title: Side Project - Webcam Eye Tracker
 ---
 <!-- 
 Need to take file id from sharable link and stick it into a new format... ie: if https://drive.google.com/file/d/<FILE_ID>/view?usp=sharing is the sharable link, make it: https://drive.google.com/uc?export=view&id=<FILE_ID>
+-->
 
 [![Video](https://drive.google.com/uc?export=view&id=1rSsakx7WO5QPaCVOOysAef5OVoMKBksi)](https://drive.google.com/file/d/1f-ut3deaM1Uz_6YP6-ZlMmx69Kmlo377/view?usp=sharing "Audi R8")
 
