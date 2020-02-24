@@ -415,7 +415,7 @@ a.pagination-item:hover {
   }
   .pagination-item {
     float: left;
-    width: 70%;
+    width: 50%;
   }
   .pagination-item:first-child {
     margin-bottom: 0;
