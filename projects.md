@@ -4,7 +4,7 @@ title: Projects
 ---
 ---
 ## Side Project - Fingerpainting
-[![Video](https://drive.google.com/uc?export=view&id=1Jmhx7iZ_OHfoR-M_ndZ_UFMtyiZHc0Lg)](https://drive.google.com/file/d/1a1NFsWVs_xlhgb0FV8ehbv2VC7uQHslN/view?usp=sharing "Fingerpainting Demo")
+<!-- [![Video](https://drive.google.com/uc?export=view&id=1Jmhx7iZ_OHfoR-M_ndZ_UFMtyiZHc0Lg)](https://drive.google.com/file/d/1a1NFsWVs_xlhgb0FV8ehbv2VC7uQHslN/view?usp=sharing "Fingerpainting Demo") -->
 
 Earlier this week, I got the idea for a little side project - an app that lets you "fingerpaint" in real time over a video. So far, I've gotten the foundations of an "eraser" function down (shown in the video) which allows the use the palm of your hand to erase your doodles. The actual finger painting portion is next on the list.
 
