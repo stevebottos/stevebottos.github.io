@@ -1,13 +1,29 @@
-# Minimal Jekyll config
+# Site settings
 title: "Minimal Jekyll Experiment"
-description: "Testing themes for GitHub Pages"
-baseurl: "" # leave empty for user site
+description: "Testing Jekyll themes on GitHub Pages"
+baseurl: ""  # leave empty for user site
 url: "https://yourusername.github.io"
 
-# Choose one theme to experiment
-remote_theme: pages-themes/minimal@v0.2.0
+# Theme selection - choose one at a time
+# Official GitHub Pages themes
+# remote_theme: pages-themes/minimal@v0.2.0
+# remote_theme: pages-themes/cayman@v0.2.0
+# remote_theme: pages-themes/architect@v0.2.0
+# remote_theme: pages-themes/merlot@v0.2.0
+# remote_theme: pages-themes/hacker@v0.2.0
+
+# Community themes
+# remote_theme: klaudiosinani/re
+# remote_theme: siddhantgoel/clean-jekyll-theme
+
 plugins:
   - jekyll-remote-theme
 
-# Optional settings
 markdown: kramdown
+
+# Optional: Personalize navigation / footer (some themes support this)
+# For Re or Clean-Jekyll you can often set:
+# re_author: "Your Name"
+# re_social: 
+#   github: "yourusername"
+#   linkedin: "yourlinkedin"
