@@ -1,0 +1,175 @@
+---
+---
+
+/* Dark Mode for Minimal Theme */
+
+footer p small {
+  display: none;
+}
+
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  padding: 50px;
+  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+}
+
+header {
+  width: 270px;
+  float: left;
+  position: fixed;
+  background-color: #0d1117;
+}
+
+header h1 {
+  color: #58a6ff;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+header h1 a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  color: #79c0ff;
+}
+
+header p {
+  color: #8b949e;
+  margin: 0 0 20px;
+}
+
+.profile-pic {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px 0;
+  border: 3px solid #30363d;
+}
+
+section {
+  width: 500px;
+  float: right;
+  padding-bottom: 50px;
+  background-color: #0d1117;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #79c0ff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #c9d1d9;
+  margin: 0 0 20px;
+}
+
+code {
+  background-color: #161b22;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  padding: 8px 15px;
+  border-radius: 3px;
+  overflow-x: auto;
+}
+
+pre code {
+  color: #e6edf3;
+  border: none;
+  padding: 0;
+}
+
+blockquote {
+  color: #8b949e;
+  border-left: 3px solid #30363d;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+hr {
+  border: 0;
+  background: #30363d;
+  height: 1px;
+  margin: 0 0 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #161b22;
+  color: #c9d1d9;
+  text-align: left;
+  padding: 5px 10px;
+  border: 1px solid #30363d;
+}
+
+td {
+  padding: 5px 10px;
+  border: 1px solid #30363d;
+}
+
+footer {
+  width: 270px;
+  float: left;
+  position: fixed;
+  bottom: 50px;
+  color: #8b949e;
+}
+
+footer a {
+  color: #58a6ff;
+}
+
+.sidebar-nav {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+  color: #58a6ff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar-nav a:hover {
+  color: #79c0ff;
+}
+
+.sidebar-nav .icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}

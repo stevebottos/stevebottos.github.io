@@ -1,16 +1,17 @@
 # Site settings
-title: "Minimal Jekyll Experiment"
-description: "Testing Jekyll themes on GitHub Pages"
+title: "Steve Bottos"
+description: "Lead Machine Learning Engineer | Victoria, BC"
 baseurl: ""  # leave empty for user site
 url: "https://yourusername.github.io"
 
 # Theme selection - choose one at a time
 # Official GitHub Pages themes
-# remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: pages-themes/minimal@v0.2.0
 # remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/architect@v0.2.0
 # remote_theme: pages-themes/merlot@v0.2.0
-remote_theme: pages-themes/hacker@v0.2.0
+# remote_theme: pages-themes/hacker@v0.2.0
+# remote_theme: pages-themes/midnight@v0.2.0
 
 # Community themes
 # remote_theme: klaudiosinani/re
@@ -27,3 +28,6 @@ markdown: kramdown
 # re_social: 
 #   github: "yourusername"
 #   linkedin: "yourlinkedin"
+
+# Optional: Remove "View on GitHub" banner for Minimal theme
+github: false
