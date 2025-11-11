@@ -1,24 +1,13 @@
-# Permalinks
-permalink:        pretty
+# Minimal Jekyll config
+title: "Minimal Jekyll Experiment"
+description: "Testing themes for GitHub Pages"
+baseurl: "" # leave empty for user site
+url: "https://yourusername.github.io"
 
-# Setup
-title:            Steve Bottos
-tagline:          Machine Learning Engineer
-description:      Machine Learning Engineer
-url:              http://stevebottos.github.io
-baseurl:          /stevebottos.github.io/
+# Choose one theme to experiment
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
+  - jekyll-remote-theme
 
-author:
-  name:           Steve Bottos
-  url:            
-
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com
+# Optional settings
+markdown: kramdown
