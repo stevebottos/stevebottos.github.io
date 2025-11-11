@@ -6,8 +6,8 @@ url: "https://yourusername.github.io"
 
 # Theme selection - choose one at a time
 # Official GitHub Pages themes
-remote_theme: pages-themes/minimal@v0.2.0
-# remote_theme: pages-themes/cayman@v0.2.0
+# remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 # remote_theme: pages-themes/architect@v0.2.0
 # remote_theme: pages-themes/merlot@v0.2.0
 # remote_theme: pages-themes/hacker@v0.2.0
