@@ -174,3 +174,42 @@ footer a {
   height: 16px;
   flex-shrink: 0;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 960px) {
+  body {
+    padding: 20px;
+  }
+
+  .wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  header {
+    width: 100%;
+    position: relative;
+    float: none;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  section {
+    width: 100%;
+    float: none;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+    float: none;
+    bottom: auto;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
