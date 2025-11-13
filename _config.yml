@@ -2,7 +2,7 @@
 title: "Steve Bottos"
 description: "Lead Machine Learning Engineer | Victoria, BC"
 baseurl: ""  # leave empty for user site
-url: "https://yourusername.github.io"
+url: "https://stevebottos.github.io"
 
 # Theme selection - choose one at a time
 # Official GitHub Pages themes
@@ -19,6 +19,7 @@ remote_theme: pages-themes/minimal@v0.2.0
 
 plugins:
   - jekyll-remote-theme
+  - jemoji
 
 markdown: kramdown
 

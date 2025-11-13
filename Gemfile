@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 # Use GitHub Pages gem which includes Jekyll and all compatible plugins
 gem "github-pages", group: :jekyll_plugins
+gem 'jemoji'
 
 # Optional: Windows and JRuby specific gems
 platforms :mingw, :x64_mingw, :mswin, :jruby do
