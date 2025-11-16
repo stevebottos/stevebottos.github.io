@@ -215,7 +215,7 @@ footer a {
 /* Mobile responsive styles */
 @media (max-width: 960px) {
   body {
-    padding: 20px;
+    padding: 10px;
   }
 
   .wrapper {
@@ -225,19 +225,52 @@ footer a {
 
   header {
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     float: none;
     text-align: center;
+    background-color: #0d1117;
+    padding: 10px 0;
+    border-bottom: 1px solid #30363d;
+  }
+
+  header h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  header p {
+    display: none;
   }
 
   .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 60px;
+    height: 60px;
+    margin: 5px 0;
+  }
+
+  .sidebar-nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .sidebar-nav li {
+    margin-bottom: 0;
+  }
+
+  .sidebar-nav a {
+    font-size: 14px;
   }
 
   section {
     width: 100%;
     float: none;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 

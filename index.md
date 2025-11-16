@@ -4,11 +4,34 @@ title: Home
 ---
 
 # Hello :wave:
-This is a convenient home for my few professional socials/media as well as whatever semi-professional posts I've decided to blast out into the ether. Most posts are related to ML, stuff I'm interested in, side projects, some tutorials, etc. If you would like to contact me, you will find up to date contact information on my resume.
-# A Brief Bio
-I've spent the past 6 years working as a Machine Learning Engineer at progressively higher levels of responsibility across a handful of startups. I am currently a Lead at [Kibeam](https://kibeam.com/), where I oversee everything from Ops to edge model training/deployment to LLMs, and everything in between. In my spare time, I tinker with whatever else interests me. At the moment, that's video understanding, which is cool because I believe that future AI (world models, AGI, etc.) applications will require a grasp of time rather than just being able to interpret a still image.
+I've spent the past 6 years working as a Machine Learning Engineer at progressively higher levels of responsibility across a handful of startups. I am currently a Lead at [Kibeam](https://kibeam.com/), where I oversee everything from Ops to edge model training/deployment to LLMs, and everything in between. In my spare time, I tinker with whatever else interests me, and that gets posted here.
 #### Some stuff I'm interested in right now...
 - Multimodal ML, especially video understanding
 - Heirerchical Reasoning Models
 - LLMs, and making them less unwieldy
-- Prefix tuning, improving VLM performance on spatial tasks
+- Prefix tuning/ QLoRa, improving VLM performance on spatial tasks
+- Reinforcement Learning
+
+---
+
+## Recent Posts
+
+{% for post in site.posts limit:3 %}
+  <article class="post-preview">
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+    {% if post.tags and post.tags.size > 0 %}
+      <div class="post-tags">
+        {% for tag in post.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if post.excerpt %}
+      <p>{{ post.excerpt }}</p>
+      <p><a href="{{ post.url | relative_url }}" class="read-more">read more →</a></p>
+    {% endif %}
+  </article>
+{% endfor %}
+
+<p style="text-align: center; margin-top: 20px;"><a href="{{ site.baseurl }}/posts">View all posts →</a></p>
