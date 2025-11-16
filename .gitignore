@@ -2,6 +2,11 @@
 _gh_pages
 _site
 .ruby-version
+.archive/
+.jekyll-metadata 
+Gemfile.lock
+notes.md 
+serve.sh
 
 # Numerous always-ignore extensions
 *.diff
