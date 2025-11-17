@@ -33,6 +33,8 @@ Below are some examples of video clips with their corresponding predicted captio
   </div>
 </div>
 
+---
+
 ## Some Basics
 
 It’s worth clarifying that models like [VideoMAE](https://arxiv.org/abs/2203.12602) did exist before V-JEPA 2 came around, and you could probably do everything we talk about here with that as an encoder, it just might not work as well out of the box since it hasn’t been trained on such a mountain of data. A relevant detail from the VideoMAE paper is that video features are highly compressible, since most frame-to-frame details are redundant, so let’s keep that in mind. What this means is that I may not really need the entire (long) output sequence from the video encoder, I might just need 5-10% of it. 
