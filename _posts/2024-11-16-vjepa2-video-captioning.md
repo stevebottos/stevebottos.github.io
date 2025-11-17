@@ -20,16 +20,16 @@ Below are some examples of video clips with their corresponding predicted captio
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; justify-items: center; align-items: center; margin: 0 auto; max-width: 800px;">
   <div style="text-align: center;">
-    <img src="../assets/posts/2024-11-16-vjepa2-video-captioning/170354.gif" alt="Example 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/assets/posts/2024-11-16-vjepa2-video-captioning/170354.gif" alt="Example 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
   </div>
   <div style="text-align: center;">
-    <img src="../assets/posts/2024-11-16-vjepa2-video-captioning/174998.gif" alt="Example 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/assets/posts/2024-11-16-vjepa2-video-captioning/174998.gif" alt="Example 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
   </div>
   <div style="text-align: center;">
-    <img src="../assets/posts/2024-11-16-vjepa2-video-captioning/184590.gif" alt="Example 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/assets/posts/2024-11-16-vjepa2-video-captioning/184590.gif" alt="Example 3" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
   </div>
   <div style="text-align: center;">
-    <img src="../assets/posts/2024-11-16-vjepa2-video-captioning/198826.gif" alt="Example 4" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/assets/posts/2024-11-16-vjepa2-video-captioning/198826.gif" alt="Example 4" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
   </div>
 </div>
 
@@ -44,12 +44,12 @@ Another relevant paper here is [BLIP-2](https://arxiv.org/abs/2301.12597). This 
 
 So, we’d have as input to the text model a sequence consisting of \[Vision Tokens, Text Tokens\]. In BLIP-2’s setup, where the vision tokens are the output of the Q-Former. You might notice that what we’re doing here is basically prefix tuning from the perspective of the text model. 
 
-This recipe is pretty simple to extend. The language model can be either encoder-decoder (BLIP-2’s paper uses T5 Flan), or decoder-only. We’ll be using decoder-only, since it’s easy and we’re really only looking for a baseline PoC today. ![Blip2 Vanilla](../assets/posts/2024-11-16-vjepa2-video-captioning/blip2-vanilla.png)
+This recipe is pretty simple to extend. The language model can be either encoder-decoder (BLIP-2's paper uses T5 Flan), or decoder-only. We'll be using decoder-only, since it's easy and we're really only looking for a baseline PoC today. ![Blip2 Vanilla]({{ site.baseurl }}/assets/posts/2024-11-16-vjepa2-video-captioning/blip2-vanilla.png)
 
 ## Extending to Video Captioning 
 
-We can take the original architecture, and swap out the video encoder for V-JEPA 2’s encoder. Now we have this:  
-![Blip2 Vanilla](../assets/posts/2024-11-16-vjepa2-video-captioning/blip2-video.png)
+We can take the original architecture, and swap out the video encoder for V-JEPA 2's encoder. Now we have this:
+![Blip2 Vanilla]({{ site.baseurl }}/assets/posts/2024-11-16-vjepa2-video-captioning/blip2-video.png)
 You can find a full implementation [here](https://github.com/stevebottos/vjepa2-video-captioning). For the data, I went with [Something-Something v2](https://cv.gluon.ai/build/examples_datasets/somethingsomethingv2.html), and supplemented the training data with: [some additional captions that I synthetically generated](https://github.com/stevebottos/somethingsomethingv2-paraphrase) so that it behaved more like a video captioning dataset and less like an action recognition dataset. It’s still not much data, but it’s enough to prove a point.
 
 There are a few details that are different from BLIP-2’s, most of which are imposed by the fact that I don’t have a ton of compute readily available right now:
