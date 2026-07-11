@@ -23,6 +23,17 @@ plugins:
 
 markdown: kramdown
 
+exclude:
+  - "assets/posts/**/*.tex"
+  - "assets/posts/**/*.aux"
+  - "assets/posts/**/*.log"
+  - "assets/posts/**/*.fls"
+  - "assets/posts/**/*.fdb_latexmk"
+  - "assets/posts/**/*.synctex.gz"
+  - "assets/posts/**/*.pdf"
+  - "assets/posts/**/*.excalidraw"
+  - "assets/posts/CLAUDE.md"
+
 # Optional: Personalize navigation / footer (some themes support this)
 # For Re or Clean-Jekyll you can often set:
 # re_author: "Your Name"

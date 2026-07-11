@@ -44,3 +44,13 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+
+# Figure sources (assets/posts/<title>/) - only rendered PNG/SVG output is tracked
+assets/posts/**/*.tex
+assets/posts/**/*.aux
+assets/posts/**/*.fls
+assets/posts/**/*.fdb_latexmk
+assets/posts/**/*.synctex.gz
+assets/posts/**/*.pdf
+assets/posts/**/*.excalidraw
+assets/posts/**/CLAUDE.md

@@ -4,13 +4,13 @@ title: Home
 ---
 
 # Hello :wave:
-I've spent the past 6 years working as a Machine Learning Engineer at progressively higher levels of responsibility across a handful of startups. I am currently a Lead at [Kibeam](https://kibeam.com/), where I oversee everything from Ops to edge model training/deployment to LLMs, and everything in between. In my spare time, I tinker with whatever else interests me, and that gets posted here.
+For the past 8 years I've been doing ML across a handful of companies. Right now I'm at [Engine](https://engine.com/). I'm lucky to enjoy what I do enough to pick up some personal research projects when I'm not at my day job. I try to catalog those endeavors here, with some shorter posts landing on [my X](https://x.com/home) or [LinkedIn](https://www.linkedin.com/in/stephen-bottos/). 
+
 #### Some stuff I'm interested in right now...
-- Multimodal ML, especially video understanding
-- Heirerchical Reasoning Models
-- LLMs, and making them less unwieldy
-- Prefix tuning/ QLoRa, improving VLM performance on spatial tasks
-- Reinforcement Learning
+I'm pretty focused on small vision/language models right now. I'm wondering how to improve the performance of visual-RAG from an engineering and cost standpoint. 
+
+#### AI in my posts...
+I try to write everything by hand. Sometimes I want to get a post written up but don't have the time to hand-write it entirely. It should be pretty obvious when AI is involved but I'll mention it in my posts anyway.
 
 ---
 
