@@ -7,7 +7,7 @@ date: 2026-07-11
 ---
 
 # Some RAG Systems and Their Problems 
-I want to break this down into three flavors of RAG. **Text RAG**: your content is already text, code files, transcripts, that kind of thing. **Document RAG**: you're starting from PDFs, so you have to extract the content before you can do anything with it. **Visual RAG**: you skip extraction entirely and embed the page images directly. All of these options have their own pros and cons, but I think that Visual RAG is my preference of the three from an engineering standpoint.
+I want to break this down into three flavors of RAG. **Text RAG**: your content is already text, code files, transcripts, that kind of thing. **Document RAG**: you're starting from PDFs, so you have to extract the content before you can do anything with it. **Visual RAG**: you skip extraction entirely and embed the page images directly. All of these options have their own pros and cons, this is my attempt at working through them.
 
 ## Text RAG
 Let's say you have a corpus of text-only content (code, transcriptions, etc...). You want to allow your users to ask questions about that content, and get a precise answer that's grounded in the source instead of hallucinated. A simple solution looks something like this:
@@ -51,10 +51,10 @@ That reframes what "Visual RAG's cost problem" actually is. It's not just that v
 So the pitch isn't "Visual RAG solves everything" - it's that it clears Document RAG's extraction mess for free, comes closer to Text RAG's simplicity than Document RAG ever did, and its one real weakness (page-level rather than region-level retrieval) is a tractable engineering problem rather than a fundamental one. That's a good trade, and it's the direction I'd bet on.
 
 ## What next? 
-I posted a bit about this on my X account, in the linked post I outline a system in which you'd use a small, lightweight "Seeker" model that knows how to find relevant content *within* a page after ColPali's retrieval step - essentially a reranker but for visual content. 
+I posted a bit about this on my X account, in the linked post I outline a system in which you'd use a small, lightweight model I'm calling a "Seeker" that knows how to find relevant content *within* a page after ColPali's retrieval step, essentially a reranker but for visual content. 
 <div style="display: flex; justify-content: center;">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I feel like instead of either: <br>- PDF -&gt; extract to text+figs -&gt; text RAG<br>- PDF -&gt; image embeddings -&gt; retrieve whole pages<br>... You could do something like this? <a href="https://t.co/IRKvugHmdd">pic.twitter.com/IRKvugHmdd</a></p>&mdash; steve (@steve4thinking) <a href="https://x.com/steve4thinking/status/2074262898357231786?ref_src=twsrc%5Etfw">July 6, 2026</a></blockquote>
 </div>
 <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
-Phrase-grounded detection isn't really a new thing, models like Grounding DINO and OWL-ViT are pretty good at this already for objects. They're not really designed for small objects like text, though, and they're not trained to make semantic connections between query<->content. There's a drought of data for this sort of thing, I'm building a dataset to fix that, it's available through [https://huggingface.co/datasets/stevebottos/publaynet-grounding-v1](my huggingface), but at the time of writing it's still a big WIP. 
+Open-vocabulary detection isn't really a new thing, models like Grounding DINO and OWL-ViT are pretty good at this already for objects. They're not really designed for small objects like text, though, and they're not trained to make semantic connections between query<->content. There's a drought of data for this sort of thing, I'm building a dataset to fix that, it's available through [my huggingface](https://huggingface.co/datasets/stevebottos/publaynet-grounding-v1), but at the time of writing it's still a big WIP. 
 
