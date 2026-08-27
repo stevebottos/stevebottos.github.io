@@ -2,7 +2,6 @@
 layout: default
 title: "Teaching a CNN to play Lunar Landar with Visual Features Only and Reinforcement Learning"
 excerpt: "A chronicle of a reinforcement learning project, from initial struggles with exploding losses to a successful pixel-based agent for LunarLander."
-tags: [reinforcement learning, proximal policy optimization, computer vision, deep learning, tutorial]
 date: 2025-12-04
 ---
 AI helped with writing this one. It came up with the stupid "From Crash and Burn..." title. I'm gonna allow it because it's kind of endearing.

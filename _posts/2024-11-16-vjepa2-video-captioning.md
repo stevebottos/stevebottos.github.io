@@ -2,7 +2,6 @@
 layout: default
 title: "Fast, Simple, Fun - Video Understanding with <40M Parameters"
 excerpt: "A very approachable jumping off point for video captioning. If you're GPU-poor (<24GB vram) this is for you."
-tags: [video, nlp, multi-modal, foundational models, tutorial]
 date: 2024-11-16
 ---
 

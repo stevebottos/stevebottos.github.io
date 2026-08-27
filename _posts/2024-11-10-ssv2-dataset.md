@@ -2,7 +2,6 @@
 layout: default
 title: "Something-Something-V2-Paraphrased"
 excerpt: "A small contribution to the community. Adds caption-like variety samples to SSV2 dataset."
-tags: [video captioning, novel dataset, LLMs, VLMs]
 date: 2024-11-10
 ---
 # Something-Something-V2, Paraphrased

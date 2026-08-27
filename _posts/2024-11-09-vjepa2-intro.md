@@ -2,7 +2,6 @@
 layout: default
 title: "V-JEPA 2 Isn't Getting the Hype It Deserves"
 excerpt: "Some thoughts about the potential power of Meta's V-Jepa 2."
-tags: [video, multi-modal, foundational models]
 date: 2024-11-09
 ---
 

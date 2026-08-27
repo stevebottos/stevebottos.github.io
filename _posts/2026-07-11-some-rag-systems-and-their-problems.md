@@ -2,7 +2,6 @@
 layout: default
 title: "Some RAG Systems and Their Problems"
 excerpt: "Text RAG is manageable. Document RAG means bolting on OCR and layout models that work well but add real overhead. Visual RAG skips the extraction step entirely, but trades it for a cost and precision problem of its own."
-tags: [vision, text, RAG, engineering]
 date: 2026-07-11
 ---
 
